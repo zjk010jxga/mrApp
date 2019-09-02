@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:text="修改性别"
+        android:textSize="18dp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y14"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/done"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:paddingLeft="@dimen/x14"
+        android:text="完成"
+        android:textSize="15dp"
+        android:textColor="#4770EB"/>
+
+
+    <ImageView
+        android:id="@+id/nav_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:src="@drawable/ic_nav_back" />
+
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/nav_back"
+        style="@style/Line3"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sex_man"
+        android:background="@color/colorWrite"
+        android:layout_below="@+id/line">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="男"
+            android:textSize="16dp"
+            android:textColor="#333333"
+            android:paddingLeft="@dimen/x14"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tick"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@id/sex_man"
+        style="@style/Line3"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sex_women"
+        android:background="@color/colorWrite"
+        android:layout_below="@+id/line1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="女"
+            android:textSize="16dp"
+            android:textColor="#333333"
+            android:paddingLeft="@dimen/x14"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tick"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/sex_women"
+        style="@style/Line3"
+        />
+
+</RelativeLayout>

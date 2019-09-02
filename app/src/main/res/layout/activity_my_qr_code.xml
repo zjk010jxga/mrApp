@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我的二维码"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y14"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu"
+        android:src="@drawable/menu"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y30"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:paddingLeft="@dimen/x14"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/nav_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:src="@drawable/nav_bk" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card"
+        android:layout_below="@+id/zdd"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginRight="@dimen/x16"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nick"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="张大大啊"
+            android:textSize="20dp"
+            android:textColor="#333333"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nick_num"
+            android:layout_below="@+id/nick"
+            android:layout_marginTop="@dimen/y3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ID号：2548625"
+            android:textSize="14dp"
+            android:textColor="#CCCCCC"/>
+
+            <ImageView
+                android:id="@+id/qr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/y6"
+                android:src="@drawable/zdd_qr_code" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/info"
+                android:layout_gravity="center"
+                android:layout_below="@+id/zdd"
+                android:paddingTop="@dimen/y15"
+                android:paddingBottom="@dimen/y30"
+                android:text="扫一扫上面的二维码，加我"
+                android:textSize="12dp"/>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/zdd"
+        android:layout_below="@+id/menu"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/zdd"/>
+
+
+
+
+
+
+</RelativeLayout>

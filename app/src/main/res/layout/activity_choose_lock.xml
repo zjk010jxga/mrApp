@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:text="增加授权开锁"
+        android:textSize="18dp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y14"/>
+
+
+
+    <ImageView
+        android:id="@+id/nav_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:src="@drawable/ic_nav_back" />
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/nav_back"
+        style="@style/Line3"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:id="@+id/rv_choose_lock">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

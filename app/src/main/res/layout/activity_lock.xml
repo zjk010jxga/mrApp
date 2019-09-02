@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/text_blue">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="开锁"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y14"/>
+
+
+
+    <ImageView
+        android:id="@+id/nav_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:src="@drawable/nav_bk" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/IV_lock"
+        android:layout_below="@id/nav_back"
+        android:src="@drawable/main_lock"
+        android:layout_centerHorizontal="true"
+
+        />
+    <Button
+        android:layout_width="@dimen/x270"
+        android:layout_height="@dimen/y36"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_below="@+id/IV_lock"
+        android:layout_centerHorizontal="true"
+        android:text="长按开锁"
+        android:textColor="#4770EB"
+        android:textSize="18dp"
+        android:background="@drawable/btu_lock"
+        style="?android:attr/borderlessButtonStyle"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/btu_lock"
+        >
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center">-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/authorized_lock"-->
+                <!--android:layout_marginRight="@dimen/x50"/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/temporary_lock"/>-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/my_lock"-->
+                <!--android:layout_marginLeft="@dimen/x50"/>-->
+
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="@dimen/y20"
+            android:paddingBottom="@dimen/y20">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_authorized_lock"
+                android:gravity="center_horizontal"
+                android:layout_marginRight="@dimen/x50"
+                android:drawablePadding="@dimen/y15"
+                android:drawableTop="@drawable/authorized_lock"
+                android:text="授权开锁"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/temporary_lock"
+                android:drawablePadding="@dimen/y15"
+                android:gravity="center"
+                android:text="临时开锁"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_myLock"
+                android:drawableTop="@drawable/my_lock"
+                android:drawablePadding="@dimen/y15"
+                android:gravity="center"
+                android:text="我的锁"
+                android:textSize="15dp"
+                android:layout_marginLeft="@dimen/x50"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

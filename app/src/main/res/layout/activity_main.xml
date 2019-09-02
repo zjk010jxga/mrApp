@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+  >
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWrite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mr_home"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_home"
+            android:text="首页"
+            android:textSize="11sp"/>
+
+        <RadioButton
+            android:id="@+id/mr_video"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_video"
+            android:text="视频"
+            android:textSize="11sp"/>
+
+        <RadioButton
+            android:id="@+id/mr_me"
+            style="@style/tab_menu_item"
+            android:baselineAligned="false"
+            android:drawableTop="@drawable/tab_menu_my"
+            android:text="我"
+            android:textSize="11sp"/>
+
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/div_white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_marginBottom="-1dp"/>
+
+
+</RelativeLayout>

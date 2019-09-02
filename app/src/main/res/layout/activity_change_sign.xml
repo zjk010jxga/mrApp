@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWrite"
+        android:gravity="center"
+        android:paddingTop="@dimen/y24"
+        android:paddingBottom="@dimen/y14"
+        android:text="个性签名"
+        android:textColor="#333333"
+        android:textSize="18dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/done"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:paddingLeft="@dimen/x14"
+        android:text="完成"
+        android:textSize="15dp"
+        android:textColor="#4770EB"/>
+    <ImageView
+        android:id="@+id/nav_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:src="@drawable/ic_nav_back" />
+    <View
+        android:id="@+id/line"
+        style="@style/Line2"
+        android:layout_below="@+id/nav_back"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:id="@+id/signature"
+        android:layout_below="@+id/line">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="个性签名"
+            android:textSize="16dp"
+            android:textColor="#333333"
+            android:paddingLeft="@dimen/x14"
+            android:paddingTop="@dimen/y20"
+            android:paddingBottom="@dimen/y20"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="@dimen/x10"
+            android:gravity="right">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@null"
+                android:maxEms="12"
+                android:maxLength="30"
+                android:text="谈爱恨，不能潦草，战鼓敲啊敲。这缘分，像一道桥，旌旗飘啊飘。"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:textColor="#999999"
+                android:textSize="15dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

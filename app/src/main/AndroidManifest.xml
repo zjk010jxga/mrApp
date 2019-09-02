@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bsl.mrapp">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon3x"
+        android:label="MR"
+        android:roundIcon="@mipmap/icon3x"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".UserActivity"
+            android:label="@string/title_activity_user"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".BslLoginActivity">
+
+        </activity>
+        <activity
+            android:name=".TestLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Activity.Lock.ChooseLockActivity" />
+        <activity android:name=".Activity.Lock.MyLockActivity" />
+        <activity android:name=".Activity.Lock.TestRxJavaActivity" />
+        <activity android:name=".Activity.Lock.AddAuthorizedLockActivity" />
+        <activity android:name=".Activity.Lock.AuthorizedTheLockActivity" />
+        <activity android:name=".Activity.Lock.LockActivity" />
+        <activity android:name=".Activity.Me.ChangePasActivity" />
+        <activity android:name=".Activity.Me.HelpActivity" />
+        <activity android:name=".Activity.Me.ChangeBindingPhoneNumberActivity" />
+        <activity android:name=".Activity.Me.ChangeLanguagesActivity" />
+        <activity android:name=".Activity.Me.GeneralSettingActivity" />
+        <activity android:name=".Activity.Me.SendMessageMeActivity" />
+        <activity android:name=".Activity.Me.PrivacySettingActivity" />
+        <activity android:name=".Activity.Me.NewMessageNotificationActivity" />
+        <activity android:name=".Activity.Me.SettingActivity" />
+        <activity android:name=".Activity.TakePhotoActivity" />
+        <activity android:name=".Activity.Me.WithdrawalActivity" />
+        <activity android:name=".Activity.Me.MyWalletActivity" />
+        <activity android:name=".Activity.TransactionDetailsActivity" />
+        <activity android:name=".Activity.Me.MyQrCodeActivity" />
+        <activity android:name=".Activity.Me.ChangePictureActivity" />
+        <activity android:name=".Activity.Me.PictureActivity" />
+        <activity android:name=".Activity.Me.ChangeSignActivity" />
+        <activity android:name=".Activity.Me.ChangeNameActivity" />
+        <activity android:name=".Activity.Me.ChangeSexActivity" />
+        <activity
+            android:name=".Activity.Me.PersonInfoActivity"
+            android:label="@string/title_activity_peson_info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.MyActivity" />
+        <activity android:name=".Activity.Login.InputCodeActivity" />
+        <activity android:name=".Activity.Login.FindAccountActivity" />
+        <activity android:name=".Activity.Login.AccountLogActivity" />
+        <activity android:name=".Activity.Login.RegisterActivity" />
+        <activity android:name=".Activity.Login.LoginActivity" />
+        <activity android:name=".Activity.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.bsl.mrapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

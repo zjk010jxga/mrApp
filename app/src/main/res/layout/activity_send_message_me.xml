@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+   >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:text="谁可以发消息给我"
+        android:textSize="18dp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y14"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/done"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y26"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:paddingLeft="@dimen/x14"
+        android:text="完成"
+        android:textSize="15dp"
+        android:textColor="#4770EB"/>
+    <ImageView
+        android:id="@+id/nav_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:src="@drawable/ic_nav_back" />
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/nav_back"
+        android:background="@color/div_white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/div_tab_bar"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/x14"
+            android:paddingTop="@dimen/y10"
+            android:paddingBottom="@dimen/y10"
+            android:text="所有人"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/div_tab_bar"
+            android:id="@+id/cb_all"
+            android:paddingBottom="@dimen/y10"
+            android:paddingTop="@dimen/y10"
+            android:layout_marginLeft="@dimen/x290"
+            style="@style/CustomCheckBoxTheme"
+            android:checked="true"
+
+            />
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@+id/cb_all"
+        style="@style/Line2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_gravity="center"
+        android:layout_marginTop="-2dp"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y10"
+        android:paddingBottom="@dimen/y10"
+        android:text="仅相互关注的人"
+        android:textColor="#333333"
+        android:textSize="16dp" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:id="@+id/cb_focus_on"
+                android:layout_marginLeft="@dimen/x290"
+                android:paddingBottom="@dimen/y10"
+                android:paddingTop="@dimen/y10"
+                style="@style/CustomCheckBoxTheme"
+
+
+
+                />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_below="@+id/cb_focus_on"
+            style="@style/Line2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/x14"
+                android:paddingTop="@dimen/y10"
+                android:paddingBottom="@dimen/y10"
+                android:text="关闭"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x290"
+                android:layout_below="@+id/line1"
+                android:id="@+id/cb_close"
+                android:paddingBottom="@dimen/y10"
+                android:paddingTop="@dimen/y10"
+               style="@style/CustomCheckBoxTheme"
+
+                />
+
+
+        <View
+            android:layout_below="@+id/cb_close"
+            style="@style/Line2"/>
+
+
+</RelativeLayout>

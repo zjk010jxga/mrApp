@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dialog_layer"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:layout_gravity="center"
+            android:src="@drawable/cancel_authorization"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温馨提示"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y5"
+            android:text="删除后将无法离线开锁"
+            android:textColor="#333333"
+            android:textSize="15dp"/>
+        <View
+            android:id="@+id/div_tab_bar"
+            android:layout_width="match_parent"
+            android:paddingRight="@dimen/x10"
+            android:paddingLeft="@dimen/x10"
+            android:layout_height="1dp"
+            android:layout_below="@id/nav_back"
+            android:background="@color/div_white"
+            android:layout_marginTop="@dimen/y12"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_delete"
+                android:gravity="center"
+                android:paddingTop="@dimen/y10"
+                android:paddingBottom="@dimen/y12"
+                android:paddingRight="@dimen/x36"
+                android:paddingLeft="@dimen/x50"
+                android:button="@null"
+                android:text="删除"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#4770EB"/>
+            <View
+                android:layout_width="1dp"
+                android:paddingLeft="@dimen/x10"
+                android:layout_height="match_parent"
+                android:layout_below="@id/nav_back"
+                android:background="@color/div_white"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_cancel"
+                android:gravity="center"
+                android:paddingBottom="@dimen/y12"
+                android:paddingTop="@dimen/y10"
+                android:paddingLeft="@dimen/x36"
+                android:paddingRight="@dimen/x50"
+                android:button="@null"
+                android:text="取消"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#999999"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

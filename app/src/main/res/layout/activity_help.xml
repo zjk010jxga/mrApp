@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:text="新消息通知"
+        android:textSize="18dp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y14"/>
+    <ImageView
+        android:id="@+id/nav_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:src="@drawable/ic_nav_back" />
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/nav_back"
+        android:background="@color/div_white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_layout"
+        android:layout_below="@+id/div_tab_bar"
+        android:layout_marginTop="@dimen/y8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_new_message"
+            android:background="@color/colorWrite">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/x14"
+                android:text="请选择反馈类型"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_me_back"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/y8"
+    android:background="@color/colorWrite">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            android:layout_marginLeft="@dimen/x14"
+            android:layout_marginTop="@dimen/y10"
+            android:gravity="top"
+            android:background="@null"
+            android:hint="请描述您使用的问题"
+            android:textColorHint="#CCCCCC"
+            android:textSize="14dp"
+            android:textCursorDrawable="@null" />
+</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x14"
+            android:layout_marginTop="@dimen/y8"
+            android:text="请留下您的联系方式，方便我们为您解决问题"
+            android:textSize="12dp"
+            android:textColor="#999999"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWrite"
+            android:paddingBottom="@dimen/y5"
+            android:paddingTop="@dimen/y5"
+            android:layout_marginTop="@dimen/y8"
+            android:text="手机号码"
+            android:textColor="#333333"
+            android:textSize="14dp"
+            android:layout_marginLeft="@dimen/x14"/>
+        <Button
+            android:layout_width="@dimen/x270"
+            android:layout_height="@dimen/y36"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_gravity="center"
+            android:text="提交反馈"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/btu_help"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+</RelativeLayout>

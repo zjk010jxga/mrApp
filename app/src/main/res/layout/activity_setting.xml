@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:text="设置"
+        android:textSize="18dp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y14"/>
+
+
+
+    <ImageView
+        android:id="@+id/nav_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:src="@drawable/ic_nav_back" />
+
+
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/nav_back"
+        android:background="@color/div_white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/div_tab_bar"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_new_message_setting"
+            android:orientation="horizontal"
+            android:background="@color/colorWrite">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/x14"
+                android:text="新消息通知"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_me_back"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_privacy_setting"
+            android:layout_marginTop="@dimen/y8"
+            android:background="@color/colorWrite">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/x14"
+                android:text="隐私设置"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_me_back"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"
+
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_general"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/y8"
+            android:background="@color/colorWrite">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/x14"
+                android:text="通用"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_me_back"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"
+
+                />
+
+
+        </LinearLayout>
+        <View
+            style="@style/Line2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_mobile_phone_binding"
+            android:orientation="horizontal"
+            android:background="@color/colorWrite">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/x14"
+                android:text="手机绑定"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:paddingLeft="@dimen/x14"
+                android:text="153****1245"
+                android:textColor="#999999"
+                android:textSize="16dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_me_back"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"
+
+                />
+
+
+        </LinearLayout>
+        <View
+            style="@style/Line2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_change_password"
+            android:orientation="horizontal"
+            android:background="@color/colorWrite">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/x14"
+                android:text="修改密码"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_me_back"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"
+
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_help_and_feedback"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/y8"
+            android:background="@color/colorWrite">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/x14"
+                android:text="帮助与反馈"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_me_back"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"
+
+                />
+
+
+        </LinearLayout>
+        <View
+            style="@style/Line2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_version_information"
+            android:orientation="horizontal"
+            android:background="@color/colorWrite">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/x14"
+                android:text="版本信息"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"
+                android:layout_marginRight="@dimen/x5"
+                android:text="V1.0"
+                android:textColor="#999999"
+                android:textSize="16dp"
+                android:gravity="right"
+
+                />
+
+
+        </LinearLayout>
+        <View
+            style="@style/Line2"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_log_out"
+            android:orientation="horizontal"
+            android:background="@color/colorWrite">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/x14"
+                android:text="退出登录"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_me_back"
+                android:paddingRight="@dimen/x14"
+                android:paddingLeft="@dimen/x19"
+                android:paddingBottom="@dimen/y15"
+                android:paddingTop="@dimen/y15"
+
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

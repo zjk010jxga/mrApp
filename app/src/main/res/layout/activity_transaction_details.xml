@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWrite"
+        android:text="交易明细"
+        android:textSize="18dp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y8"/>
+
+
+    <ImageView
+        android:id="@+id/nav_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y14"
+        android:paddingRight="@dimen/x14"
+        android:src="@drawable/ic_nav_back" />
+
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/nav_back"
+        style="@style/LineHorizontal"
+         />
+    <TextView
+        android:layout_width="match_parent"
+       android:layout_height="@dimen/x1"
+        android:id="@+id/person_text"
+        android:layout_below="@+id/line"
+        android:background="@color/colorBg"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_transaction_detail"
+        android:background="@color/colorWrite"
+        android:layout_below="@+id/person_text">
+        <RadioGroup
+            android:id="@+id/rg_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWrite"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_all"
+                style="@style/tab_menu_details"
+                android:text="全部"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_income"
+                style="@style/tab_menu_item"
+                android:text="收入"
+                android:textSize="18dp"/>
+
+            <RadioButton
+                android:id="@+id/rb_spending"
+                style="@style/tab_menu_item"
+                android:baselineAligned="false"
+                android:text="支出"
+                android:textSize="18dp"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/ll_transaction_detail"
+        android:background="@color/div_white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:background="@color/colorWrite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/div_tab_bar"
+        android:layout_marginBottom="-1dp"/>
+
+</RelativeLayout>

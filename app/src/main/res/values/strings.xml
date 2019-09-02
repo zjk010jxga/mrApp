@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name1">智能锁</string>
+    <string name="edit_phone_input">请输入手机号码</string>
+    <string name="et_password_input">请输入密码</string>
+    <string name="edt_register_code">请输入验证码</string>
+    <string name="next">下一步</string>
+    <string name="login">登录</string>
+    <string name="register">注册账号</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="title_activity_bottom_tab_layout">BottomTabLayoutActivity</string>
+
+    <string name="tab_menu_alert">提醒</string>
+    <string name="tab_menu_profile">信息</string>
+    <string name="tab_menu_pay">我的</string>
+    <string name="tab_menu_setting">设置</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_peson_info">PesonInfoActivity</string>
+    <string name="tv_toast">已保存到相册</string>
+    <string name="title_activity_test_login">TestLoginActivity</string>
+    <string name="title_activity_user">UserActivity</string>
+
+
+</resources>
