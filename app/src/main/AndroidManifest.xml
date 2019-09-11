@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bsl.mrapp">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon3x"
@@ -12,17 +9,23 @@
         android:roundIcon="@mipmap/icon3x"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TopViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LaaaaActivity" />
+        <activity android:name=".HhhhhActivity" />
         <activity
             android:name=".UserActivity"
             android:label="@string/title_activity_user"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".BslLoginActivity">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".BslLoginActivity" />
         <activity
             android:name=".TestLoginActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activity.Lock.ChooseLockActivity" />
         <activity android:name=".Activity.Lock.MyLockActivity" />
         <activity android:name=".Activity.Lock.TestRxJavaActivity" />
@@ -52,13 +55,14 @@
             android:name=".Activity.Me.PersonInfoActivity"
             android:label="@string/title_activity_peson_info"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".Activity.MyActivity" />
         <activity android:name=".Activity.Login.InputCodeActivity" />
         <activity android:name=".Activity.Login.FindAccountActivity" />
         <activity android:name=".Activity.Login.AccountLogActivity" />
         <activity android:name=".Activity.Login.RegisterActivity" />
         <activity android:name=".Activity.Login.LoginActivity" />
-        <activity android:name=".Activity.MainActivity" >
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -76,5 +80,8 @@
                 android:resource="@xml/file_paths" />
         </provider>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>
