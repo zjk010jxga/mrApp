@@ -8,9 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bsl.mrapp.Activity.Login.LoginActivity;
@@ -33,7 +35,7 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
 
-public class BslLoginActivity extends AppCompatActivity implements View.OnClickListener{
+public class BslLoginActivity extends AppCompatActivity implements View.OnClickListener,TextView.OnEditorActionListener {
     private Button btLogin;
     private EditText etUserName,etPassWord;
     @Override
@@ -176,5 +178,10 @@ public class BslLoginActivity extends AppCompatActivity implements View.OnClickL
 
         }
     });
+    }
+
+    @Override
+    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+        return false;
     }
 }

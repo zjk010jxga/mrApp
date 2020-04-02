@@ -24,7 +24,7 @@ import java.net.URLEncoder;
 import java.util.HashMap;
 import static com.bsl.mrapp.tools.StatusBarUtil.setStatusColor;
 
-public class TestLoginActivity extends AppCompatActivity {
+public class        TestLoginActivity extends AppCompatActivity {
     String TAG = MainActivity.class.getCanonicalName();
     private EditText et_data_name;
     private EditText et_data_pass;

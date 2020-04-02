@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bsl.mrapp">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon3x"
@@ -12,13 +9,26 @@
         android:roundIcon="@mipmap/icon3x"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".Activity.Me.WriteComplaintActivity"></activity>
         <activity android:name=".Activity.Me.ComplaintsActivity" />
         <activity android:name=".InsideActivity" />
+=======
+        <activity android:name=".TopViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LaaaaActivity" />
+        <activity android:name=".HhhhhActivity" />
+>>>>>>> 05739c17eca5053294269382fc0e433d41193be6
         <activity
             android:name=".UserActivity"
             android:label="@string/title_activity_user"
             android:theme="@style/AppTheme.NoActionBar" />
+<<<<<<< HEAD
         <activity android:name=".BslLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +45,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+=======
+        <activity android:name=".BslLoginActivity" />
+        <activity
+            android:name=".TestLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+>>>>>>> 05739c17eca5053294269382fc0e433d41193be6
         <activity android:name=".Activity.Lock.ChooseLockActivity" />
         <activity android:name=".Activity.Lock.MyLockActivity" />
         <activity android:name=".Activity.Lock.TestRxJavaActivity" />
@@ -64,6 +80,7 @@
             android:name=".Activity.Me.PersonInfoActivity"
             android:label="@string/title_activity_peson_info"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity android:name=".Activity.MyActivity" />
         <activity android:name=".Activity.Login.InputCodeActivity" />
         <activity android:name=".Activity.Login.FindAccountActivity" />
@@ -88,5 +105,8 @@
                 android:resource="@xml/file_paths" />
         </provider>
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>
