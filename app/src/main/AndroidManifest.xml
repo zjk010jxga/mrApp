@@ -12,16 +12,28 @@
         android:roundIcon="@mipmap/icon3x"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Me.WriteComplaintActivity"></activity>
+        <activity android:name=".Activity.Me.ComplaintsActivity" />
+        <activity android:name=".InsideActivity" />
         <activity
             android:name=".UserActivity"
             android:label="@string/title_activity_user"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".BslLoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".TestLoginActivity"
             android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".Activity.Lock.ChooseLockActivity" />
         <activity android:name=".Activity.Lock.MyLockActivity" />
@@ -58,7 +70,7 @@
         <activity android:name=".Activity.Login.AccountLogActivity" />
         <activity android:name=".Activity.Login.RegisterActivity" />
         <activity android:name=".Activity.Login.LoginActivity" />
-        <activity android:name=".Activity.MainActivity" >
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

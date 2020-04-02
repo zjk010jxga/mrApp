@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Me.WriteComplaintActivity"
+    android:background="#F4F7FA"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="投诉"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop= "@dimen/y24"
+        android:paddingBottom="@dimen/y6"
+        android:background="#FFFFFF"
+        android:id="@+id/tv_complaints"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y26"
+        android:paddingBottom="@dimen/y6"
+        android:paddingRight="@dimen/x14"
+        android:src="@drawable/ic_nav_back" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:id="@+id/ll_complaint_content"
+        android:layout_below="@+id/tv_complaints"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_marginTop="@dimen/y8"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y10"
+       android:paddingBottom="@dimen/y12"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="投诉内容"
+            android:textSize="16sp"
+            android:gravity="left"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="0/200"
+            android:gravity="right"
+            android:paddingRight="@dimen/x14"
+            android:textColor="#999999"
+            android:layout_marginTop="@dimen/y70"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_img"
+        android:orientation="vertical"
+        android:layout_below="@+id/ll_complaint_content"
+        android:background="#fff"
+        android:layout_marginTop="@dimen/y8"
+        android:paddingLeft="@dimen/x14"
+        android:paddingTop="@dimen/y10"
+        android:paddingBottom="@dimen/y12"
+        android:paddingRight="@dimen/x14">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_add_img">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="图片证据"
+                android:textColor="#999999"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:textColor="#999999"
+                android:text="最多可选9张"
+                android:gravity="right"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"android:layout_marginTop="@dimen/y10">
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/add"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_img"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/y40">
+        <Button
+            android:layout_width="@dimen/x240"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_img"
+           android:background="@drawable/btu_sumit"
+            android:text="提交"
+            android:textColor="#333333"
+            android:textSize="18sp"
+
+
+
+            />
+    </LinearLayout>
+
+</RelativeLayout>
